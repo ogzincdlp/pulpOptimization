@@ -1,4 +1,4 @@
-from pulp import LpProblem, LpMinimize, LpMaximize, LpVariable, value, lpDot
+from pulp import LpProblem, LpMinimize, LpMaximize, LpVariable, lpDot
 
 from utilities import print_result
 
@@ -62,4 +62,3 @@ problem += lpDot(variables.values(), costs.values()) <= 1
 problem.solve()
 
 print_result(problem)
-
